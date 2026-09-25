@@ -38,3 +38,13 @@ zepto-ai-platform/
 │   └── README.md
 ├── .gitignore
 └── README.md
+## Run Instructions
+
+Run commands from the repository root unless the section says otherwise. Make sure Python and pip are installed.
+
+### 1. Book Data Pipeline
+
+Install dependencies:
+
+```bash
+pip install requests beautifulsoup4 pandas
