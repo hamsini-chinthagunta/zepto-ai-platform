@@ -1,14 +1,14 @@
 # Zepto AI Platform
 
-A multi-part data and AI project combining a book data pipeline, Titanic dataset analytics, and a Zepto policy question-answering API.
+A multi-part data and AI project featuring a book data pipeline, Titanic dataset analytics, and a Zepto policy question-answering API.
 
 ## Project Overview
 
 This repository contains three components:
 
-1. **Book Data Pipeline** — collects book information from Books to Scrape, cleans and transforms the data, stores it in SQLite, and demonstrates SQL and pandas analysis.
-2. **Titanic Data Analytics** — performs data profiling, cleaning, visualization, classification, and fare prediction using the Titanic dataset.
-3. **Zepto Policy Support Assistant** — a retrieval-augmented generation (RAG) API that answers questions using a set of local Zepto policy documents.
+1. **Book Data Pipeline** — scrapes book listings, cleans and transforms the data, stores it in SQLite, and demonstrates SQL and pandas analysis.
+2. **Titanic Data Analytics** — profiles and cleans the Titanic dataset, explores patterns through visualizations, trains classification models, and predicts fare values.
+3. **Zepto Policy Support Assistant** — a retrieval-augmented generation (RAG) API that answers questions using local Zepto policy documents.
 
 ## Repository Structure
 
@@ -38,13 +38,3 @@ zepto-ai-platform/
 │   └── README.md
 ├── .gitignore
 └── README.md
-## Run Instructions
-
-Run commands from the repository root unless the section says otherwise. Make sure Python and pip are installed.
-
-### 1. Book Data Pipeline
-
-Install dependencies:
-
-```bash
-pip install requests beautifulsoup4 pandas
