@@ -73,7 +73,7 @@ def main():
     )
 
     # Illustrative conversion rate; replace with the rate specified by your assignment.
-    GBP_TO_INR = 110.0
+    GBP_TO_INR = 105.50
     df["price_inr"] = (df["price_gbp"] * GBP_TO_INR).round(2)
 
     df.to_csv("data_pipeline/books.csv", index=False)
