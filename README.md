@@ -38,3 +38,33 @@ zepto-ai-platform/
 │   └── README.md
 ├── .gitignore
 └── README.md
+
+
+
+
+
+
+
+
+
+
+
+## Technologies Used
+
+- **Programming:** Python, JavaScript
+- **Data Pipeline:** Requests, BeautifulSoup, Pandas, SQLite
+- **Analytics and Machine Learning:** NumPy, Pandas, Seaborn, Matplotlib, Scikit-learn, Imbalanced-learn
+- **Policy Support Assistant:** FastAPI, Sentence Transformers, ChromaDB, LangGraph, Pydantic
+- **Tools:** Git, GitHub, Jupyter Notebook, Docker (optional)
+
+## Run Instructions
+
+### 1. Data Pipeline
+
+Open a terminal in the project folder and run:
+
+```bash
+pip install requests beautifulsoup4 pandas
+python data_pipeline/scraper.py
+python data_pipeline/database.py
+python data_pipeline/queries.py
