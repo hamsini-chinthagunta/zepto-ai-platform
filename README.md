@@ -39,16 +39,6 @@ zepto-ai-platform/
 ├── .gitignore
 └── README.md
 
-
-
-
-
-
-
-
-
-
-
 ## Technologies Used
 
 - **Programming:** Python, JavaScript
@@ -68,3 +58,14 @@ pip install requests beautifulsoup4 pandas
 python data_pipeline/scraper.py
 python data_pipeline/database.py
 python data_pipeline/queries.py
+
+
+
+
+
+
+
+
+
+
+
