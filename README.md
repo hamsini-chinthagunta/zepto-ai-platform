@@ -1,73 +1,40 @@
-
 # Zepto AI Platform
 
-A book data collection and analytics project with a simple book support assistant.
+A multi-part data and AI project combining a book data pipeline, Titanic dataset analytics, and a Zepto policy question-answering API.
 
-## Project Features
+## Project Overview
 
-- Scrapes book information from Books to Scrape.
-- Collects book titles, prices, ratings, stock availability, and categories.
-- Cleans and transforms the scraped data.
-- Converts prices from GBP to INR using an illustrative exchange rate.
-- Stores the data in an SQLite database.
-- Uses Pandas for summary statistics and category analysis.
-- Generates a chart of average book prices by category.
-- Provides a rule-based support assistant that answers questions using the database.
+This repository contains three components:
 
-## Project Structure
+1. **Book Data Pipeline** — collects book information from Books to Scrape, cleans and transforms the data, stores it in SQLite, and demonstrates SQL and pandas analysis.
+2. **Titanic Data Analytics** — performs data profiling, cleaning, visualization, classification, and fare prediction using the Titanic dataset.
+3. **Zepto Policy Support Assistant** — a retrieval-augmented generation (RAG) API that answers questions using a set of local Zepto policy documents.
+
+## Repository Structure
 
 ```text
 zepto-ai-platform/
+├── analytics/
+│   ├── analysis.py
+│   ├── titanic.csv
+│   └── models/
+│       └── best_pipeline.joblib
 ├── data_pipeline/
 │   ├── scraper.py
 │   ├── database.py
+│   ├── queries.py
 │   ├── books.csv
 │   └── books.db
-├── analytics/
-│   ├── analysis.py
-│   └── books_by_category.png
 ├── support_assistant/
-│   └── app.py
+│   ├── docs/
+│   │   ├── doc_01.txt
+│   │   ├── doc_02.txt
+│   │   ├── ...
+│   │   └── doc_08.txt
+│   ├── main.py
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── README.md
 ├── .gitignore
 └── README.md
-```
-
-## How to Run
-
-Install dependencies:
-
-```bash
-python -m pip install requests beautifulsoup4 pandas matplotlib
-```
-
-Run the scraper:
-
-```bash
-python data_pipeline/scraper.py
-```
-
-Create the database:
-
-```bash
-python data_pipeline/database.py
-```
-
-Run the analysis:
-
-```bash
-python analytics/analysis.py
-```
-
-Start the support assistant:
-
-```bash
-python support_assistant/app.py
-```
-
-## Data Source
-
-Books to Scrape: https://books.toscrape.com/
-
-## Note
-
-The support assistant is rule-based and uses predefined question patterns with SQLite queries. The GBP-to-INR conversion rate in the scraper is illustrative and should be replaced with the rate specified by the project requirements, if applicable.
